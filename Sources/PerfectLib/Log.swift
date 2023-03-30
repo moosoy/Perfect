@@ -75,6 +75,7 @@ public struct SysLogger: Logger {
 #else
     // nerdo: Using unified logging (https://developer.apple.com/documentation/os/logging)
     // os_log isn't very well documented... but this seems like a step in the right direction.
+    /*
     let osLogType: OSLogType
     switch priority {
     case 0, 1, 2:
@@ -89,6 +90,7 @@ public struct SysLogger: Logger {
         osLogType = .default
     }
     os_log("%s", log: .default, type: osLogType, args)
+    */
 #endif
 	}
 
